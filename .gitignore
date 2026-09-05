@@ -30,3 +30,10 @@ npm-debug.log*
 
 # Vercel
 .vercel/
+
+# Local-only planning/reference docs — not for the public repo
+/Travel Tech Hackathon Themes.*
+/implementation_plan.md
+/task.md
+/TravelMate_AI_Amadeus_Hackathon.pptx
+/*.jpg
