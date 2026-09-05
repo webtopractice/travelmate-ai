@@ -1,0 +1,21 @@
+[project]
+name = "ai-travel-assistant"
+version = "1.0.0"
+description = "AI-Powered Personal Travel Assistant — LangGraph + Claude + FastAPI"
+readme = "README.md"
+requires-python = ">=3.12"
+authors = [{ name = "Travel Hackathon Team" }]
+dependencies = [
+    "fastapi>=0.141.1",
+    "httpx>=0.28.1",
+    "langchain-anthropic>=1.7.1",
+    "langchain-core>=1.6.2",
+    "langgraph>=1.2.11",
+    "pydantic-settings>=2.15.0",
+    "python-dotenv>=1.2.3",
+    "sse-starlette>=3.4.10",
+    "uvicorn[standard]>=0.52.4",
+]
+
+[project.scripts]
+dev = "uvicorn app.main:app --reload --host 0.0.0.0 --port 8000"
